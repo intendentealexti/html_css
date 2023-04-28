@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;   /* font para o bady */
+        }
+
+        a{
+            color: red;                             /* cor dos links */
+            text-decoration: none;                    /* tirando sublinhado dos links */
+            font-weight: bold;                        /* deixa mais em negrito as letras */
+         }
+
+         a:visited{
+             color: darkred;                        /* vai deixar o link desta cor quando acessado */
+         }
+         a:hover{                                      /* ao passar o mouse deixa algum tipo de animação */
+             color: black;                           /* cor presta ao passar o mouse */
+             text-decoration: underline;               /* como vimos acima deixa sublinhado ao passar o mouse */
+         }
+         a:active{                                      /* vai deixar uma animação, no qual voce determinar */
+             color: yellow;                           /* como a cor amarelo quando clicar em algum link  */
+         }
+         a::after{                          /* vamos agr usar o Pseudo-elementos */ /* atentar para :: é ele quem puxa*/
+            content: '[link]';                            /* colocando a palavra link no final dos link */
+            text-decoration: none;
+            font-weight: normal;                          /* usando font normal */
+            color: darkgray;                            /* dando cor a palavra */
+         }
+        /* DANDO ESTILO NA CLASS E ELEMENTOS DELA */
+
+         .especial{                                 /* lembrando, estamos chamando a CLASS e colocando uma cor  */
+             background-color: aquamarine;
+         }
+         .especial::before{                         /* vai colocar a seta SIMBOLO antes do texto */
+             content: '→';
+            }
+         .especial::after{                          /* vai colocar a seta SIMBOLO depois do texto */
+             content: '←';
+             color: darkred;                     /* fui obrigado a colocar esse comando para forçar ficar com essa cor */
+         }   
+    
+    </style>
+</head>
+
+<body>
+
+    <h1>Personlizando links</h1>
+
+    <ul>     <!-- Listas e links  -->           <!-- lembrando q "Target=blank" abre o link em outra pag e não na mesma-->
+        <li><a href="https://www.youtube.com/"target="blank"> YouTube</a></li>
+        <li><a href="https://github.com/settings/sponsors-log"target="blank"> GitHub</a></li>
+        <li><a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF"target="blank"> Acesso a cores</a></li>
+        
+    </ul>
+
+    <br>
+    <h1>Link Usando class e Pseudo-elementos</h1>
+    <li><a href="http://fap.if.usp.br/~vvuolo/A%20-%20HOME%20-%20Fisica/simbolos.htm"target="blank" class="especial"> Imbolos HTML</a></li>
+</body>
+</html>

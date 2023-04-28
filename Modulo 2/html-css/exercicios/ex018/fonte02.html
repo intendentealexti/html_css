@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+
+        /* Tipo de formato:
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (apple advenced Typography)
+        - svg */     
+        
+        
+        @font-face {
+            font-family: 'natal'; /* esse nome é opcional */
+            src: url('fonts/Snowy Christmas - Personal Use.otf') format('opentype') 
+            ;
+        }
+
+        h1{
+            font-family: natal;  /* Lembra do nome opcional */
+            font-size: 5em;      /* tamanho da fonte  */
+            font-weight: normal; /* tamanho e aparencia normal da fonte usada */
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Título ñ</h1>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sapiente pariatur totam? Commodi voluptates optio ea sequi aperiam, rem sunt voluptatum voluptate quibusdam eos, magnam sit, obcaecati accusantium quis mollitia!</p>
+    
+
+</body>
+</html>

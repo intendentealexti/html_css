@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+
+    <style>
+
+h1{ /* Box-level */
+    background-color: dimgrey;
+    text-align: center;
+
+    height: 200px;
+    width: 300px;
+
+    border: 10px solid greenyellow; /* forma simplificada */
+
+    padding: 10px; /* poderia ser "padding 10px 10px 10px 10px", mas dessa forma atual fica simplificada */
+
+    margin: 20px auto 40px auto; /* as laterais centralizadas mas o topo e o inferior declarados com PX */
+
+    outline: 5px dashed rgb(51, 51, 236); /* entre a Margin e Padding voce pode colocar esse comando tbm.... */
+    
+  }
+  
+  a{    /* Inline-level */
+      border: 5px dashed rgb(14, 177, 241); /* simplificamos  */
+
+      padding: 10px; /* simplificamos tbm os 4 lados da caixa */
+  }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Caixa Box-level</h1>
+
+    <p>Modelo de caixa <a href="#">do tipo inline-level</a>. Muita atenção nos comentários</p>
+
+</body>
+</html>

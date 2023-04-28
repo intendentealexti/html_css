@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+<style>
+    div{
+        display: inline-block;                          /* modifica para horizontal os blocos dando espaços */
+        background-color: rgb(124, 212, 212);         /* cor na area em que a div vai trabalhar */
+        height: 200px;                                  /* altura de 200 px */
+        width: 200px;                                   /* largura de 200 px */
+        text-align: center;                             /* alinhamento de texo ao centro */
+        border: 1px solid black;                      /* largura da borda */
+        }
+
+        div:hover{
+            background-color: red;                     /* uma pequena animação ao passar o mouse nos blocos */
+        }                                                /* e isso tudo só é possivel com o ":" (pseudo) na div:hover */
+</style>
+</head>
+
+<body>
+    <h1>Criando blocos</h1>
+
+    <div id="d1"> 01</div>
+    <div id="d2"> 02</div>
+    <div id="d3"> 03</div>
+
+</body>
+</html>

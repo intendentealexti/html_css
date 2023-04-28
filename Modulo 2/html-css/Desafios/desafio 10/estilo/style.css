@@ -1,0 +1,210 @@
+@charset "utf-8";  
+
+/*Fonte Bebas tiradas do Google Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Font usada no android*/
+@font-face {
+
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* Criando variáveis  */
+:root{
+    --cor1:#e1ffdd;
+    --cor2:#91F582;
+    --cor3:#73C267;
+    --cor4:#1f6e11;
+    --cor5:#516e4c;
+                                /*Fontes que serão usadas */
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+/*Como Globalizar todas as tags principais como p,h1,h2, main, body com apenas o "*"  */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*conteúdo principal*/ 
+body{
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {  /*colocando emoji no nos links para dizer que é exteno e precisamos criar a classe no HTML*/
+    content: '\1f517';
+}
+
+/*Configurando o Header*/
+header{
+    
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    text-align: center;
+    min-height: 150px;
+    padding-top:40px;
+}
+header h1{
+    color: white;
+    font-family: var(--fonte-bebas);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.623);
+    font-weight: normal;
+}
+header > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.623);
+    margin-bottom: 30px;
+}
+/*Menu*/
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.527);
+
+}
+nav > a{
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+}
+
+nav >a:hover {  /* Display no menu*/
+        background-color: var(--cor3);
+        color: var(--cor4);
+}
+/*Corpo*/
+main{
+    background-color: white;
+    min-width: 290px;
+    max-width: 1000px;
+    margin:auto;
+    margin-bottom: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-bottom-left-radius: 10px ; /* foi preciso criar o arredondamento assim, para não mexer nas bordas superiores */
+    border-bottom-right-radius: 10px ;
+}
+main h1{
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 5px;
+    font-weight: normal;    
+}
+
+main p{ /* sem o sinal de maior porque tudo que estiver dentro do main vai ficar com essa configuração*/
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.2em;
+}
+
+Main strong {
+    color: var(--cor5);
+    font-weight: bold;
+   
+}
+
+main a {
+    background-color: var(--cor2);
+    padding: 2px 5px;
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block; /*isso porque imagem não é bloco, só assimm vai respeitar o "MARGIN" */
+    margin: auto;
+}
+
+div.video{
+    background-color: var(--cor4);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    position:relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+/* aside */
+aside {
+background-color: var(--cor3);
+padding: 10px;
+border-radius: 10px;
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color:white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;  /*crescendo a margis para fora */
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2705'; /*imojipidia - como colocar emojis*/
+    list-style-position: inside; /*Posicionou as marcações da lista para dentro do aside */
+    columns: 2; /*dividiu a lisa em duas colunas*/
+}
+
+
+/*Roda pé*/
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 6px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+} 
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+    
+}
+
+

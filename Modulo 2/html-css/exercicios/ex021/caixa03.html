@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            background-color: darkgray;
+        }
+        header{
+            background-color: rgb(56, 51, 51);
+            padding: 10px 20px;
+            margin: 10px 20px;
+        }
+
+        header > h1{
+            text-align: center;
+            font-family: Lucida Handwriting;
+        }
+
+        nav{
+            background-color: rgb(19, 54, 43); 
+            padding: 10px;
+            margin: 10px;                 
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: darkgoldenrod;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        nav > a:hover{   /* o underline só funcionou desta forma, até tentei colocalo na tag acima */
+            text-decoration: underline;
+        }
+
+        h2{
+            margin-left: 30px;
+        }
+
+        main{
+            background-color: rgb(99, 95, 95);
+            padding: 10px 20px;
+            margin: 10px 20px;
+        }
+        article{
+            background-color: rgb(184, 192, 199);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main > section > h3{
+            border-width: 5px; /* grossura da borda */
+            border-style: dashed; /* estilo de borda para o link "a" */
+            border-color: rgb(231, 5, 5); /* cor da borda */
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+
+        }
+
+        footer{
+            background-color: rgb(175, 240, 240);
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 20px;
+            margin: 10px 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Consideramos o cabeçalho ideal para menu -->
+    <header>
+        <h1>Thank you for visiting us Welcome</h1>
+        <nav><!-- com o NAV vamos criar nosso Menu  -->
+            <a href="#">Link de acesso</a>
+            <a href="#">Link de acesso</a>
+            <a href="#">Link de acesso</a>
+            <a href="#">Link de acesso</a>
+        </nav>
+    </header>
+    <!-- Main é considerado o conteúdo Principal da Página -->
+    <main>
+        <h2>Nosso conteúdo Principal</h2>
+        <!-- as Tags a seguir não precisam ter uma orde em específico -->
+        <section>
+            <h3>Noticias de hoje </h3>
+            <aside>
+                <article>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti impedit alias sequi a, porro autem nostrum delectus ad eveniet eligendi, voluptatum labore, ex vero dolore aut modi repellendus non nam.</p>
+                </article>
+            </aside>
+        </section>
+    </main>
+    <!-- geralmente usado para o rodapé da página -->
+    <footer>
+    Criado por Alexânder Menezes
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <H1>Incluindo vídeos hospedados localmente</H1>
+    <p>Este vídeo esta hospedado no meu próprio servidor.</p>
+<video width="500" poster="imagens/2.PNG" controls  > <!-- LEMBRANDO QUE O "CONTRLS" POSSIBILITA O PLAY BO VIDEO E O ""-->
+    <source src="midia/meu-video.mp4.mp4" type="video/mp4"> <!-- CONTINUANDO O "POSTER" PERMITE A IMAGEM antes do vídeo-->
+    <source src="midia/Meu-Video.m4v.m4v" type="video/m4v">
+    <source src="midia/meu-video.webm" type="video/webm">
+    <!-- o SOURCE vai tentar executar nesta ordem de cima para baixo -->
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</video>
+<!-- Esta forma de delcarar, é a forma que sai cara para o cliente -->
+
+<h1>inserindo vídeos do YouTube</h1>
+<iframe width="500" height="315" src="https://www.youtube.com/embed/CAYDRIbXFAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h1>Inserindo vídeos do Vimeo</h1>
+<iframe src="https://player.vimeo.com/video/246917979?h=a50976dede&loop=1" width="500" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<!-- As duas formas tanto do YOUTUBE quanto a do VIMEO, ajudam a não pesar o site para o usuario. ATENÇÃO COM DIREITOS AUTORAIS DOS VIDEOS -->
+</body>
+</html>

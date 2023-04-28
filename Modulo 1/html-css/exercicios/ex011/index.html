@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em diversos dispositivos</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <P>Adicionando áudio no site</P>
+    
+     <!-- colocando alguns parametros ||  VAMOS USAR O "PRELOAD" PORÉM NO AUTO ELE CARREGA TODO O ARQUIVO PRIMEIRO, O " METADATA" CARREGA ALGUMAS INFORMAÇÕES || "AUTOPLAY" as vezes mão funciona mas ele começa o audio sem precisar de um comando do usuario || "CONTROLS" o próprio nome já diz, controle.-->
+
+    <audio preload="metadata" autoplay controls><!-- aqui podemos colocar o "LOOP" quando temrinar bai começar de novo -->
+
+        <!-- aqui ele vai tenter executar por ordem, no caso o primeiro source é em mp3 -->
+        <source src="midia/tellme.mp3" type="audio/mpeg"> <!-- mpeg sómente para mp3 -->
+        <source src="midia/tellme.ogg" type="audio/ogg">  <!--  -->       
+        <source src="midia/tellme.wav" type="audio/wav">  <!-- costuma ser a midia mais pesada -->
+
+        <p>infelizmenrw nem todos os navegadores são compativeis com as referências do html5.
+            <a href="midia/tellme.mp3">Clique aqui para baixar o arquivo MP3 </a>
+        </p>
+    </audio>
+</body>
+</html>         
