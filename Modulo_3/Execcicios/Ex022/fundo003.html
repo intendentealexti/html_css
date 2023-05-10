@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posição dos fundos</title>
+    <style>
+        div.bloco {
+           background-image: url('imagens/wallpaper003.jpg'); /*colocando imagem no fundo*/
+           height: 200px; /*Altura*/
+           border: 1px solid black; /*borda*/
+           border-radius: 20px; /*arredondamento das bordas*/
+           margin: 10px; /*espaçamento entre as imagens*/
+        }
+
+        div#q1{
+            background-position: left top ; /* lado esquerdo em cima */
+        }
+        div#q2{
+            background-position: left center ; /* lado esquerdo no centro */
+        }
+        div#q3{
+            background-position: right bottom ; /*lado direito em baixo*/
+        }
+        div#q4{
+            background-position: center center ; /*posição no centro*/
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1">    
+    </div>
+    
+    <div class="bloco" id="q2">    
+    </div>
+
+    <div class="bloco" id="q3">    
+    </div>
+
+    <div class="bloco" id="q4">    
+    </div>
+</body>
+</html>
