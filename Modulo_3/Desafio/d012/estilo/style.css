@@ -1,5 +1,65 @@
 @charset "utf-8";
 
-body {
+* {
+    margin: 0px;
+    padding: 0px;
+}                                   /*deixando a formatação da pagina zerada de configuração */
+
+html , body {
+    min-height : 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black ; /*Cor da caixa do header*/
+    color: white; /* cor da letra */
+    text-align: center; /*Alinhamento das palavras */
+}
+
+header > h1 {
+    padding: 40px; /*Separando internamente dentro da caixa*/
+    font-variant: small-caps; /*Deixa as letras maiusculas mas com quebra */
+}
+
+header > p {
+    padding: 40px; /*Separando internamente dentro da caixa*/
+}
+
+header a, footer a { /*Decorando os link, mas se tivesse outros eu poderia dar comandos diferentes*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover { /*decorando efeito do link*/  
+    text-decoration: underline;
+}
+
+section { /* Criando espaços entre os sections*/ 
+    padding: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Espaço entre parágrafos */
+    padding-left: 30px; /* afastando contúdo do lado esquerdo*/
+}
+
+section.normal { /* Temporario */
     background-color: brown;
+    color: white;
+}
+
+section.imagem{ /*Temporario*/
+    background-color: black;
+    color: white;
+}
+
+section.imagem > p { /*temporário*/
+    background-color: rgba(16, 119, 204, 0.555);
+    width: 400px;
+}
+
+footer {
+    background-color:  black;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
