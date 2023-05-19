@@ -16,12 +16,12 @@
 
 html , body {
     min-height : 100vh;
-    background-color: darkgray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
 }
 
 header {
-    background-color: black ; /*Cor da caixa do header*/
+    background-color: black ; /*Cor da caixa do header*/ 
     color: white; /* cor da letra */
     text-align: center; /*Alinhamento das palavras */
     
@@ -31,7 +31,7 @@ header > h1 {
     padding: 40px; /*Separando internamente dentro da caixa*/
     font-variant: small-caps; /*Deixa as letras maiusculas mas com quebra */
     font-family: var(--font2);
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 header > p {
@@ -57,25 +57,53 @@ section { /* Criando espaços entre os sections*/
     font-size: 3vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal { /* Temporario */
-    background-color: brown;
+    background-color: rgba(216, 156, 78, 0.795);
     color: white;
+    
 }
 
 section.imagem{ /*Temporario*/
-    display: inline-block; /*Faz a caixa se adaptar com conteúdo*/
-    padding: 6px;
+    
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black; /*Sombra interna*/
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
 }
 
 section.imagem > p { /*temporário*/
-    background-color: rgba(16, 119, 204, 0.555);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.459);
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 20px 0px 20px 0px;
 }
+
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center ;
+    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right;
+    
+}
+
+
 
 footer {
     background-color:  black;
     color: white;
     text-align: center;
     padding: 15px;
+    
 }
