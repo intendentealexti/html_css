@@ -9,18 +9,46 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
         }
 
         table{
             border-collapse: collapse;
             width: 500px;
+            position: relative;
+        }
+
+        caption{
+            padding: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(180, 181, 182);
+            border: 2px solid black;
+        }
+
+        /*Comando para criar efeito zebrado */
+        tbody > tr:nth-child(odd){  /* 2n -1*/
+            background-color: beige;
+        }
+
+        tbody > tr:nth-child(even){ /* 2n */
+            background-color: rgb(153, 153, 70);
+        }
+
+        /*Comando para o Titulo da tabela acompnhar a rolagem */
+        thead > tr > th {
+            position: sticky;
+            background-color: aquamarine;
+            top: -1px;
+            /* isso não adianta de nada se nada adianta se no style da tabela não tiver 
+            >  position: relative;
+             */
         }
 
         thead, tfoot{
             background-color: aquamarine;
 
         }
-
 
         td, th{
             border: 2px solid black;
@@ -36,6 +64,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION  > usado para Títulos de tabelas
             THEAD
             tr, td, th
 
@@ -45,10 +74,11 @@
             tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption> <!-- Caption, usado para titulos-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <!---->
@@ -62,6 +92,38 @@
                 <td class="num">21 168 791</td>
             </tr>
             <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
                 <td>Rio de janeiro</td>
                 <td class="num">17 264 943</td>
             </tr>
@@ -69,14 +131,18 @@
         <!---->
         <tfoot>
             <tr>
-                <th>Total Habitantes</th>
+                <th scope="row">Total Habitantes</th>
                 <td class="num"><strong>84 352 783</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, libero minus dolorem, repellat quisquam sed officia doloribus eum deserunt alias recusandae exercitationem maiores sequi perspiciatis obcaecati aperiam delectus iste nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel. Soluta alias eum cumque. Possimus in quam, aliquam atque earum asperiores sequi, deserunt minima necessitatibus quidem quaerat itaque excepturi praesentium!
+        </p>
+    </p>
 </body>
-
-
-
-
 </html>
