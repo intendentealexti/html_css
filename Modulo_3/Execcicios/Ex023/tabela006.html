@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsívas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 12px;
+        }    
+        
+        col.a {
+            background-color: aqua;
+        }
+        col.bgroup{
+            background-color: rgb(204, 146, 58);
+        }
+        col.c{
+            background-color: brown;
+        }
+
+        /* Essa div vai deixar apenas a tabelas Responsíva em Css*/
+        div#container{
+            overflow-x: auto;
+        }
+
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+        table > caption{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas responsívas</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque totam adipisci repellendus vitae non soluta facere temporibus iusto numquam quam est veritatis minima, beatae obcaecati dolores corrupti ipsa! Molestiae, eos.</p>
+    <div id="container">
+        <table>
+                <!-- Novo comando no hmtl -->
+        <colgroup>
+            <col class="a">
+            <col class="bgroup" span="2"> <!-- Usado para colocar a pintura e mais de uma coluna "SPAN"-->
+            <col class="c">
+        </colgroup>
+        
+            <thead>
+                <caption>Cadastro</caption>
+                <tr>
+                    <th scope="col"> Nome</th>
+                    <th scope="col"> Sexo</th>
+                    <th scope="col"> Idade</th>
+                    <th scope="col"> Profissão</th>
+                    <th scope="col"> Nome</th>
+                    <th scope="col"> Sexo</th>
+                    <th scope="col"> Idade</th>
+                    <th scope="col"> Profissão</th>
+                    <th scope="col"> Nome</th>
+                    <th scope="col"> Sexo</th>
+                    <th scope="col"> Idade</th>
+                    <th scope="col"> Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                    <td>Ana</td>
+                    <td> F </td>
+                    <td> 25</td>
+                    <td> Jonalista</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
