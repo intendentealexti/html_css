@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso Iframes</title>
+    <style>
+        body{
+            background-color: rgb(110, 109, 109);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+        }
+        /*Ajuste de tamnho da nossa Iframe*/
+        iframe{
+            border: 2px solid green;
+            width:97vw;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estacolha sua página para abrir no painel</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptas tempora dolore ipsa a delectus nesciunt accusamus odio deserunt quae blanditiis perspiciatis amet, voluptate at vero consectetur recusandae cumque nobis.</p>
+    <ul> <!--neste caso o nosso target é quem faz as paginas abrirem na iframe da página principal-->
+        <li> <a href="pagextra/iframe01pag.html" target="frame">Página 01</a> </li>
+        <li> <a href="pagextra/iframe02pag.html" target="frame">Página 02</a> </li>
+        <li> <a href="pagextra/iframe03pag.html" target="frame">Página 03</a> </li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste beatae, nesciunt cum a sed illo! Non pariatur minima necessitatibus reprehenderit asperiores beatae quaerat cupiditate cumque nam deleniti ab, facere consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus molestias ea ut quos nostrum assumenda asperiores aliquid reprehenderit repellendus voluptatem voluptas qui sunt cupiditate, eaque nesciunt porro cum? Magnam.</p>
+    <!--O id aqui é para algum ajuste especifico na iframe mas aqui se mostrou desnecessário mas o NAME sim podemos linkar la no Target -->
+    <iframe id="tela" name="frame" src="" >
+        <p>infelizmente seu navegador não é compativel</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste beatae, nesciunt cum a sed illo! Non pariatur minima necessitatibus reprehenderit asperiores beatae quaerat cupiditate cumque nam deleniti ab, facere consequuntur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus molestias ea ut quos nostrum assumenda asperiores aliquid reprehenderit repellendus voluptatem voluptas qui sunt cupiditate, eaque nesciunt porro cum? Magnam.</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando uso de Iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+        iframe{
+            width: 450px;
+            height: 450px;
+            border: 2px solid red;
+            display: block; /*Vai permitir alinhar no centor a tabela*/
+            margin: auto; /*sem o comando de cima não conseguiriamos colocar a tabela no centro da página*/
+        }
+    </style>
+
+</head>
+<body>
+        <h1>Testando o uso de um iframe</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore alias modi aperiam amet velit adipisci asperiores, quae quod. Iste, minus officia earum vel sequi rerum ratione nemo numquam fugiat omnis.</p>
+        <h2>Tabela</h2>
+        <p>
+            
+            <!-- Tamnho padrão 300x150-->
+            <!-- A Frameborder é 0 ou 1 para ajustes locais mas em Css da para configurar normal como qualquer borda -->
+            <iframe src="pagextra/iframe02pag.html" frameborder="0"></iframe>
+
+            <!-- em caso da Iframe não abrir no navegador, o link vai fornecer acesso a pagina -->
+            <a href="iframe02pag.html" target="_blank"> Tabela</a>
+        </p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium cumque rerum nihil libero! Nihil, porro inventore. Temporibus quaerat quam voluptate impedit? Saepe, placeat cupiditate aliquam quod ipsam exercitationem dolorum.</p>
+</body>
+</html>
