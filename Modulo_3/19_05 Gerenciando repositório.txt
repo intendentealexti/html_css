@@ -1,5 +1,0 @@
-- Como deletar repositório e como alterar de public para privado 
-
-- Como atualizar local e depois subir para a nuvem 
-
-* Basicamento o Github que esta instalado na maquina é quem manda no que criamso localmente ou não e o que subimos para a nuvem .
