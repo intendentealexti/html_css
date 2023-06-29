@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro Formulário</h1>
+
+    <form autocomplete="off"
+          action="../cadastro.php"
+          method="get"> 
+          <!--autocomplte não deixa o campo com preenchimento
+          action seria alimentado com os campos que informarmos e levaria os dados para outra tela -->
+
+        <p><label for="inome">Nome</label> :  <input type="text" name="nome" id="inome"> </p> 
+<!--for vai nos permitir criar a relação entre os doi campos || neste cado o ID 'inome' é muito usado para JS -->
+        
+        <p><label for="isobrenome">Sobrenome</label> :  <input type="text" name="sobrenome" id="isobrenome"> </p>
+        <!--o 'name' é usado em outras linguagens --> 
+        <p><input type="submit" value="Salvar"></p>
+    </form>
+</body>
+</html>
