@@ -1,1 +1,74 @@
 @charset "utf-8";
+/*Todas as demais mididias*/
+
+/*
+pequenas telas > até  600px
+celular > de 600px até 768px
+tablet > 768px até 992px
+desktop > 992 até 1200px
+grandes telas > Acima de 1200 px
+
+*/
+/*impressora*/
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../../imagens/back-print.jpg);
+    }
+    main {
+        width: 90vw;
+        border : 3px solid blue;
+    }
+    main h1 {
+        color: black;
+        text-shadow: none;/*Removeu o efeito do h1*/
+    }
+    main::after{
+        content: 'site usado para teste ';
+    }
+img#phone {display:none;}
+img#tablet {display:none;}
+img#print {display:block;}
+img#tv {display:none;}
+img#pc {display:none;}
+}
+/*tablet*/
+@media screen and (min-width :768px) and (max-width : 992px) {
+    body{
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+img#phone {display:none;}
+img#tablet {display:block;}
+img#print {display:none;}
+img#tv {display:none;}
+img#pc {display:none;}
+    
+}
+/*desktop*/
+@media screen and (min-width : 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+img#phone {display:none;}
+img#tablet {display:none;}
+img#print {display:none;}
+img#tv {display:none;}
+img#pc {display:block;}
+}
+/*grandes telas*/
+@media screen  and (min-width:1200px) {
+    body{
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px; /*Foi fundamental para o exercício */
+    }
+    img#phone {display:none;}
+    img#tablet {display:none;}
+    img#print {display:none;}
+    img#tv {display:block;}
+    img#pc {display:none;}    
+    
+}
