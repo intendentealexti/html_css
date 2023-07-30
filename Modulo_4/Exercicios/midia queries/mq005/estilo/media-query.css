@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*Todas as demais mididias*/
+/*
+pequenas telas > até  600px
+celular > de 600px até 768px
+tablet > 768px até 992px
+desktop > 992 até 1200px
+grandes telas > Acima de 1200 px
+*/
+
+@media screen and (min-width: 768px) {
+    i#burguer{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+}
